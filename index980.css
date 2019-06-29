@@ -8,9 +8,6 @@ body {
 
 * {
   box-sizing: border-box;
-  
-
-
 }
 
 /* general */
@@ -25,12 +22,9 @@ body {
 h1,
 h2,
 h3,
-
 p {
-  margin-bottom: 10px;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
-
 
 p:last-child {
   margin-bottom: 0;
@@ -44,12 +38,16 @@ h3 {
   color: #4aaaa5;
 }
 
+
 h1 {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   font-size: 30px;
-  line-height: 49px;
+  line-height: 80px;
   border-bottom: 3px solid #dddddd;
+
 }
+
+
 
 h2,
 h3 {
@@ -61,7 +59,7 @@ h3 {
 #masthead {
   position: fixed;
   z-index: 99;
-  width: 640px;
+  width: 100%;
   margin: 0 0 30px;
   overflow: auto;
   color: #ffffff;
@@ -69,43 +67,41 @@ h3 {
   border-bottom: 2px solid #cccccc;
 }
 
-@media (max-width:640px){
 #logo {
-  text-align:center;
-   height: 200px;
+  float: left;
+  width: 250px;
+  height: 90px;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 90px;
   color: #ffffff;
-  float: auto;
+  text-align: center;
   text-decoration: none;
   background: #4aaaa5;
-  margin-left: -31px;
-  padding: 30px 270px 30px 250px;
-  
-}
-  
 }
 
 
-@media (max-width:640px){
 nav {
-  text-align: center;
-  padding: 10px 20px 10px 20px;
+    margin-left: 5px;
+    
 }
+  
 nav a {
   display: inline-block;
-  padding-left: 15px;
-  margin-left: 15px;
+  padding-top: 35px;
+  margin-left: 105px;
   line-height: 18px;
   color: #999;
   text-decoration: none;
   border-left: 1px solid #efefef;
+  
 }
+
 
 nav a:first-child {
   border-left: 0 none;
+  
 }
 
 /* footer */
@@ -131,35 +127,20 @@ h3, h2 {
 
 /* main */
 
-  
-
 #main-container {
-  padding-top: 130px;
-  min-height: calc(100vh - 70px);
+  padding-top: 150px;
+  min-height: calc(100vh - 90px);
 }
 
-@media (max-width:640px) {
 .main-section {
   
   width: 100%;
-  max-width: 640px;
-  padding: 20px 20px 160px 30px;
+  max-width: 960px;
+  
   margin: 0 0 40px;
   background: #ffffff;
   border: 1px solid #dddddd;
-
-  
-}}
-
-@media (max-width:640px) {
-
-  .pic {max-width:700px;
-     height: 190px;
-    
-  }
 }
-
-
 
 /* portfolio page */
 

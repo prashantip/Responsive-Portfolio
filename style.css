@@ -77,19 +77,15 @@ h3 {
   background: #4aaaa5;
 }
 
+@media (max-widht:960px){}
 nav {
   
   margin-top: 25px;
-
-@media screen and (max-width: 640px) {
-  text-align:center;
+   text-align:right;
    
-}
+}}
   
   
-}
-
-
 
 nav a {
   display: inline-block;
