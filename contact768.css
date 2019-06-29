@@ -8,6 +8,9 @@ body {
 
 * {
   box-sizing: border-box;
+  
+
+
 }
 
 /* general */
@@ -22,9 +25,12 @@ body {
 h1,
 h2,
 h3,
+
 p {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  margin-top: 20px;
 }
+
 
 p:last-child {
   margin-bottom: 0;
@@ -39,10 +45,11 @@ h3 {
 }
 
 h1 {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   font-size: 30px;
-  line-height: 49px;
+  line-height: 15px;
   border-bottom: 3px solid #dddddd;
+  margin-right: 60px;
 }
 
 h2,
@@ -52,54 +59,60 @@ h3 {
 
 /* header */
 
+@media (max-width:980px){
 #masthead {
   position: fixed;
   z-index: 99;
-  width: 100%;
-  margin: 0 0 30px;
+  width: 640px;
+  margin: 0px 0px 10px;
   overflow: auto;
   color: #ffffff;
   background: #ffffff;
   border-bottom: 2px solid #cccccc;
 }
-
+}
+@media (max-width:980px){
 #logo {
-  float: left;
-  width: 250px;
-  height: 90px;
+  text-align:center;
+   height:200px;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 30px;
   font-weight: 700;
-  line-height: 90px;
+  line-height:-50px;
   color: #ffffff;
-  text-align: center;
+  float: auto;
   text-decoration: none;
   background: #4aaaa5;
-}
+  margin-left: -31px;
+  padding: 30px 60px 60px 50px;
+  
+  
+}}
+  
 
 
+
+@media (max-width:980px){
 nav {
-  
-  margin-top: 25px;
-   text-align:right;
-   
+  text-align:right;
+  padding: -290px 60px 60px 60px;
 }
-  
-  
+
 
 nav a {
   display: inline-block;
   padding-left: 15px;
   margin-left: 15px;
-  line-height: 18px;
+  line-height: -18px;
   color: #999;
   text-decoration: none;
   border-left: 1px solid #efefef;
+  padding-bottom: 10px;
 }
 
 nav a:first-child {
   border-left: 0 none;
-}
+}}
 
 /* footer */
 
@@ -124,20 +137,34 @@ h3, h2 {
 
 /* main */
 
+  
+
 #main-container {
   padding-top: 130px;
   min-height: calc(100vh - 70px);
 }
 
+ @media (max-width:768){
 .main-section {
-  float: left;
+  
   width: 100%;
-  max-width: 960px;
-  padding: 30px;
+  max-width: 640px;
+  padding: 20px 20px -60px 30px;
   margin: 0 0 40px;
   background: #ffffff;
   border: 1px solid #dddddd;
-}
+
+  }
+ }
+ 
+
+  .pic {max-width:700px;
+     height: 190px;
+    
+  }
+
+
+
 
 /* portfolio page */
 
@@ -185,6 +212,7 @@ h3, h2 {
 
 #contact-form ul {
   margin-bottom: 20px;
+  margin-right: 80px;
 }
 
 #contact-form li {
@@ -212,11 +240,12 @@ textarea {
   height: 200px;
 }
 
+
 input[type=submit] {
-  padding: 10px 30px;
-  font-size: 18px;
-  color: #ffffff;
-  cursor: pointer;
-  background: #4aaaa5;
-  border: 0 none;
-}
+    padding: 10px 30px;
+    font-size: 18px;
+    color: #ffffff;
+    cursor: pointer;
+    background: #4aaaa5;
+    border: 0 none;
+  }
